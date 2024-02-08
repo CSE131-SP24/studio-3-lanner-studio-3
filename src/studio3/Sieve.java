@@ -16,7 +16,7 @@ public class Sieve {
 		}
 		for(int k = 2; k < n-1; k++) {
 			if(numbList[k] != 0) {
-				for(int j = k+1; j <= numbList.length-1; j+=(k+1)) {
+				for(int j = 2; j <= numbList.length-1; j+=2) {
 					numbList[j] = 0;
 				}
 			}
